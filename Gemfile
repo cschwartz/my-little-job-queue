@@ -27,3 +27,20 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :test, :development do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "factory_girl_rails"
+end
+
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  
+  if RUBY_PLATFORM.downcase.include?("darwin")
+    gem 'rb-fsevent'
+    gem 'growl'
+  end
+end
