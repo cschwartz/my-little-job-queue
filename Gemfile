@@ -15,6 +15,8 @@ gem 'uglifier'
 gem 'jquery-rails'
 
 gem 'devise'
+gem 'activeadmin'
+gem 'meta_search'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -33,6 +35,7 @@ end
 group :test, :development do
   gem "rspec-rails"
   gem "capybara"
+  gem "launchy"
   gem "factory_girl_rails"
 end
 
