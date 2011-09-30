@@ -4,3 +4,19 @@
 
 // To customize the Active Admin interfaces, add your
 // styles here:
+
+div.conditional {
+	background-repeat: no-repeat;
+	padding: 0 (16px + 5px);
+	height: 16px;	
+}
+
+div.true {
+	@extend div.conditional;
+	background-image: image-url('/assets/iconic/check_alt_16x16.png');
+}
+
+div.false {
+	@extend div.conditional;
+	background-image: image-url('/assets/iconic/x_alt_16x16.png');
+}
